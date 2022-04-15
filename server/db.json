@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Zen Trail",
+      "location": "St. George",
+      "difficulty": "difficult"
+    },
+    {
+        "id": 2,
+        "name": "Kentucky Lucky",
+        "location": "Bloomington",
+        "difficulty": "technical"
+      },
+      {
+        "id": 3,
+        "name": "Gooseberry Mesa",
+        "location": "Springdale",
+        "difficulty": "moderate"
+      },
+      {
+        "id": 4,
+        "name": "BearClaw Poppy Loop",
+        "location": "Bloomington",
+        "difficulty": "easy"
+      }
+  ]

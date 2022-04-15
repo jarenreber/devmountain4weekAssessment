@@ -1,0 +1,6 @@
+#trails-container {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
