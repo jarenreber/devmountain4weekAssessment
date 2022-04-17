@@ -1,5 +1,5 @@
 let trails = require('./db.json')
-
+let globalID
 
 module.exports = {
     getCompliments: (req, res) => {
@@ -28,7 +28,23 @@ module.exports = {
             res.status(200).send(randomFortunes)
     },
     getTrails: (req, res) => { 
-        console.log("hello")
+        res.status(200).send(trails)
+    },
+    addTrails: (req, res) => {
+        const { name, location, difficulty} = req.body
+        let newTrails = {
+            id: globalID,
+            name,
+            location,
+            difficulty
+        }
+        trails.push(newTrails)
+        globalID++
+        res.status(200).send(trails)
+    },
+    deleteTrail: (req, res) => {
+        let index = trails.findIndex(elem => elem.id === +req.params.id)
+        trails.splice(index, 1)
         res.status(200).send(trails)
     }
 }
